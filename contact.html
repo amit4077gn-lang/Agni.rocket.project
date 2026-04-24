@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact - AGNI Rocket Project</title>
+
+        <link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    </head>
+
+<body>
+
+<header>
+        <nav class="navbar">
+
+<h1 class="logo">AGNI Rocket</h1>
+
+         <ul class="nav-links">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="parts.html">Rocket Parts</a></li>
+         <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="mission.html">Mission</a></li>
+         <li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+          <section class="contact">
+
+<h1>Contact Us</h1>
+
+          <div class="contact-container">
+
+         <div class="contact-box">
+         <i class="fas fa-phone"></i>
+    <h3>Phone</h3>
+    <p>+91 9759662377</p>
+</div>
+
+        <div class="contact-box">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>amitkumar975966@gmail.com</p>
+</div>
+
+    <div class="contact-box">
+    <i class="fas fa-map-marker-alt"></i>
+    <h3>Location</h3>
+    <p>Greater Noida</p>
+</div>
+
+</div>
+
+<!-- Contact Form -->
+
+<div class="contact-form">
+
+          <input type="text" placeholder="Your Name">
+
+          <input type="email" placeholder="Your Email">
+
+          <textarea placeholder="Your Message"></textarea>
+
+<button>Send Message</button>
+
+</div>
+<!-- Admin Login Section -->
+
+          <div class="login">
+
+         <h2>Admin Login</h2>
+
+         <form onsubmit="return loginUser()">
+
+    <input type="text"
+     id="username"
+     placeholder="Enter Username"
+     required>
+
+ <input type="password"
+      id="password"
+      placeholder="Enter Password"
+      required>
+
+<button type="submit">
+Login
+</button>
+
+</form>
+
+</div>
+
+     </section>
+
+    <footer>
+
+<p>
+      © 2026 AGNI Rocket Project | Created by Amit Gautam
+  </p>
+
+</footer>
+<script>
+
+function loginUser(){
+
+    var user =
+    document.getElementById("username").value;
+
+    var pass =
+    document.getElementById("password").value;
+
+    if(user === "admin@akgautam" && pass === "975966"){
+
+    window.location.href = "admin.html";
+return false;
+
+}
+else{
+
+       alert("Wrong Username or Password");
+return false;
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mission - AGNI Rocket Project</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+
+<h1 class="logo">AGNI Rocket</h1>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="parts.html">Rocket Parts</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="mission.html">Mission</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="mission">
+
+<h1>Mission Details</h1>
+
+<div class="mission-container">
+
+<!-- Speed -->
+<div class="mission-card" onclick="toggleDetails('speed')">
+<h3>Speed</h3>
+
+<p class="short-text">
+AGNI rocket travels at very high supersonic speed.
+</p>
+
+<p class="details" id="speed">
+AGNI missiles can travel at several kilometers per second,
+making them extremely fast and capable of reaching
+targets in a short time.
+</p>
+
+</div>
+
+<!-- Range -->
+<div class="mission-card" onclick="toggleDetails('range')">
+<h3>Range</h3>
+
+<p class="short-text">
+It can travel thousands of kilometers distance.
+</p>
+
+<p class="details" id="range">
+Different AGNI variants have different ranges,
+from hundreds to more than 5000 kilometers,
+allowing long-distance strike capability.
+</p>
+
+</div>
+
+<!-- Technology -->
+<div class="mission-card" onclick="toggleDetails('technology')">
+<h3>Technology</h3>
+
+<p class="short-text">
+Uses advanced missile and navigation technology.
+</p>
+
+<p class="details" id="technology">
+AGNI rockets use modern guidance systems,
+solid fuel engines, and advanced navigation
+technology to ensure precise flight paths.
+</p>
+
+</div>
+
+<!-- Accuracy -->
+<div class="mission-card" onclick="toggleDetails('accuracy')">
+<h3>Accuracy</h3>
+
+<p class="short-text">
+Highly accurate targeting system.
+</p>
+
+<p class="details" id="accuracy">
+The missile uses advanced control systems
+and navigation technology to achieve
+high accuracy and reliable targeting.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 AGNI Rocket Project | Created by Amit Gautam
+</p>
+
+</footer>
+
+<!-- JavaScript -->
+<script>
+
+function toggleDetails(id) {
+
+var element = document.getElementById(id);
+
+if (element.style.display === "block") {
+element.style.display = "none";
+}
+else {
+element.style.display = "block";
+}
+
+}
+
+</script>
+
+</body>
+</html>
