@@ -19,15 +19,10 @@
 
 <h1 class="logo">AGNI Rocket</h1>
 
-      <ul class="nav-links">
-      <li><a href="index.html">index</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="parts.html">Rocket Parts</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="mission.html">Mission</a></li>
-      <li><a href="contact.html">Contact</a></li>
-</ul>
-
+     <nav class="navbar">
+    <h1 class="logo">AGNI Rocket</h1>
+    <button id="nextBtn">Next</button>
+</nav>
 </nav>
 </header>
 
@@ -86,6 +81,33 @@ and high accuracy.
 </p>
 
 </footer>
+<script>
+const pages = [
+    "index.html",
+    "about.html",
+    "parts.html",
+    "mission.html",
+    "contact.html"
+];
+
+let currentPage = window.location.pathname.split("/").pop();
+if (currentPage === "") currentPage = "index.html";
+
+let index = pages.indexOf(currentPage);
+
+const nextBtn = document.getElementById("nextBtn");
+
+// last page pe hide
+if (index === pages.length - 1) {
+    nextBtn.style.display = "none";
+}
+
+nextBtn.addEventListener("click", function() {
+    if (index < pages.length - 1) {
+        window.location.href = pages[index + 1];
+    }
+});
+</script>
 
 </body>
 </html>
